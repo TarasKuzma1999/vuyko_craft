@@ -1,3 +1,54 @@
-img{
-    width: 300px;
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap')
+
+body{
+    margin: auto;
+}
+
+
+.header_top_adress_numder{
+    display: none;
+}
+
+header .header_logo_and_nav,.header_top_adress_numder,.header_main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-image: url('../img/header_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+}
+
+header .logo{
+    height: 120px;
+}
+
+.header_logo_and_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.header_nav{
+    display: flex;
+}
+
+.header_nav nav a{
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header_nav nav a:hover{
+    color:#F8B803;
+}
+
+.another_media img{
+    height: 30px;
+    display: none;
 }
