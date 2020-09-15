@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Source+Serif+Pro&display=swap');
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, table, th, td, embed, object {
+	padding: 0;
+	margin: 0; 
+}
 
 body{
     margin: auto;
@@ -12,12 +16,14 @@ body{
 header .header_logo_and_nav,.header_top_adress_numder,.header_main{
     max-width: 1200px;
     margin: auto;
+    padding: 10px;
 }
 
 header{
     background-image: url('../img/header_background.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     height: 1000px;
 }
 
@@ -52,3 +58,37 @@ header .logo{
     height: 30px;
     display: none;
 }
+
+.header_main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#wheat{
+    height: 30px;
+}
+
+.header_main_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.header_main_text span{
+    color: #D2C9BA;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header_main_text h1{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 85px;
+    color: #fff
+}
+
+.header_main_text p{
+    font-family: 'Rubik', sans-serif;
+    color: #A77A58;
+    font-size: 17px;
+}
+
