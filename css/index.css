@@ -57,15 +57,17 @@ header .logo{
 .another_media img{
     height: 30px;
     display: none;
-}
+} 
 
 .header_main{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: 1fr 40%;   
+    height: 450px
 }
 
 #wheat{
-    height: 30px;
+    height: 20px;
+    margin: 10px 0;
 }
 
 .header_main_text{
@@ -76,19 +78,96 @@ header .logo{
 .header_main_text span{
     color: #D2C9BA;
     font-family: 'Source Serif Pro', serif;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 .header_main_text h1{
     font-family: 'Source Serif Pro', serif;
-    font-size: 85px;
+    font-size: 40px;
     color: #fff
 }
 
 .header_main_text p{
     font-family: 'Rubik', sans-serif;
     color: #A77A58;
-    font-size: 17px;
+    font-size: 10px;
+    line-height: 1.5;
 }
 
+.header_main div img{
+    max-width: 100%;
+}
+
+.header_main_buttons a{
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0C3B10;
+    padding: 20px 50px;
+    border-radius: 30px;
+}
+
+.header_main_buttons a:hover{
+    background-color: #2C8536;
+    transition: 0.5s;
+}
+
+.header_main_buttons{
+   margin-top: 40px;  
+}
+
+.header_main_buttons div{
+    display: inline-block;
+    margin: 30px 0;
+}
+
+
+@media(min-width: 770px){
+    .header_main{
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #wheat{
+        height: 30px;
+    }
+
+    .header_main_text span{
+        font-size: 14px;
+    }
+
+    .header_main_text h1{
+        font-size: 70px;
+    }
+
+    .header_main_text p{
+        font-size: 17px
+    }
+
+    .header_main_buttons a{
+        font-size: 17px;
+    }
+
+}
+
+@media(min-width: 990px){
+    .header_top_adress_numder{
+        display: flex;
+        justify-content: space-between;
+        color:  #D2C9BA;
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;        
+    }
+
+    .another_media img{
+        display: inline;
+    }
+
+    .header_main_text h1{
+        font-size: 85px;
+    }
+}
