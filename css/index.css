@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Source+Serif+Pro&display=swap');
 
+:root {
+    --color_for_xxx: #965A1C;
+    --paragraph_text_color: #AA7C5A;
+}
+
 body,
 div,
 dl,
@@ -31,6 +36,7 @@ object {
 
 body {
     margin: auto;
+    background-color: #F4EEE1;
 }
 
 
@@ -93,8 +99,8 @@ header .logo {
     height: 450px
 }
 
-#wheat {
-    height: 20px;
+.wheat {
+    height: 30px;
     margin: 10px 0;
 }
 
@@ -163,7 +169,7 @@ header .logo {
         grid-template-rows: 1fr;
     }
 
-    #wheat {
+    .wheat {
         height: 30px;
     }
 
@@ -216,4 +222,210 @@ header .logo {
 .about_us img {
     max-width: 100%;
     padding: 10px 0;
+}
+
+.xxx_over_header {
+    font-family: 'Source Serif Pro', serif;
+    color: var(--color_for_xxx);
+}
+
+.about_us_header {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 34px;
+    color: #000
+}
+
+.about_us_first_paragraph {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+.about_us_paragraphs {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: var(--paragraph_text_color);
+    padding: 15px 0;
+    line-height: 1.5;
+}
+
+@media(min-width: 770px) {
+    .about_us_text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 990px) {
+    .about_us_header {
+        font-size: 44px;
+    }
+}
+
+.about_us_buttom_img {
+    background-image: url(../img/about_us_background_bottom.svg);
+    height: 100px;
+    background-size: cover;
+}
+
+.about_tours {
+    background-color: #2C221D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_tours img {
+    height: 30px;
+    margin-left: 30px;
+}
+
+.about_tours h2 {
+    color: #fff;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 34px;
+    margin: 20px 0;
+}
+
+.about_tours span {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: var(--paragraph_text_color);
+    line-height: 1.5;
+    padding: 30px;
+    text-align: center;
+}
+
+.choose_tour {
+    display: flex;
+    max-width: 1170px;
+    min-height: 400px;
+}
+
+.tours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.tours h3 {
+    color: #fff;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 24px;
+}
+
+.tours p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 20px 10px;
+}
+
+.tours a {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0C3B10;
+    padding: 15px 50px;
+    border-radius: 30px;
+}
+
+.tours a:hover {
+    background-color: #2C8536;
+    transition: 0.5s;
+}
+
+.personal_tour {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/personal_tour_bg.png);
+    background-size: cover;
+}
+
+.group_tour {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/group_tour_bg.png);
+    background-size: cover;
+}
+
+.tasting {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/tasting_bg.png);
+    background-size: cover;
+}
+
+.beers {
+    background-color: #2C221D;
+}
+
+.beers_card {
+    display: grid;
+    grid-template-rows: 1fr 60%;
+    padding: 20px;
+    position: relative;
+}
+
+.beers_card img {
+    max-width: 100%;
+
+}
+
+.beers_info h2,
+span {
+    color: #fff;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+}
+
+.beers_info h2 {
+    font-size: 34px;
+}
+
+.beers_info span {
+    font-size: 22px;
+}
+
+.beers_info h3 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #F8B803;
+    margin: 30px 0 15px;
+}
+
+.beers_info p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.beers_parametrs div {
+    display: flex;
+    flex-direction: column;
+}
+
+.beers_parametrs div span {
+    margin: 7px 0;
+}
+
+.left_arrow {
+    position: relative;
+    left: 10px;
+    top: 50%;
+    height: 30px;
+}
+
+.right_arrow {
+    position: relative;
+    right: 10px;
+    top: 50%;
+    height: 30px;
+}
+
+.beer_power_man,
+.beer_fruit_tania {
+    display: none;
 }
