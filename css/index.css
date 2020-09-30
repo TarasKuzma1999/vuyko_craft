@@ -357,13 +357,19 @@ header .logo {
 
 .beers {
     background-color: #2C221D;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
 }
 
 .beers_card {
     display: grid;
     grid-template-rows: 1fr 60%;
     padding: 20px;
-    position: relative;
+    min-width: 90%;
+    transition: all 1s ease-in-out;
+
 }
 
 .beers_card img {
@@ -412,20 +418,15 @@ span {
 }
 
 .left_arrow {
-    position: relative;
+    position: absolute;
     left: 10px;
     top: 50%;
-    height: 30px;
+    height: 20px;
 }
 
 .right_arrow {
-    position: relative;
+    position: absolute;
     right: 10px;
     top: 50%;
-    height: 30px;
-}
-
-.beer_power_man,
-.beer_fruit_tania {
-    display: none;
+    height: 20px;
 }
