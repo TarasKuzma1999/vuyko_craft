@@ -357,18 +357,23 @@ header .logo {
 
 .beers {
     background-color: #2C221D;
-    position: relative;
+    /* position: relative;
     display: flex;
-    overflow: hidden;
+    overflow: hidden; */
+
 
 }
 
-.beers_card {
+.beers .beer_carousel {
+    max-width: 80%;
+    margin: auto;
+
+}
+
+.beers .beers_card {
     display: grid;
     grid-template-rows: 1fr 60%;
     padding: 20px;
-    min-width: 90%;
-    transition: all 1s ease-in-out;
 
 }
 
@@ -378,7 +383,7 @@ header .logo {
 }
 
 .beers_info h2,
-span {
+.beers_info span {
     color: #fff;
     font-family: 'Source Serif Pro', serif;
     font-weight: bold;
@@ -417,16 +422,223 @@ span {
     margin: 7px 0;
 }
 
-.left_arrow {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    height: 20px;
+@media(min-width: 770px) {
+    .beers_card {
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: 1fr;
+    }
 }
 
-.right_arrow {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    height: 20px;
+
+.our_events {
+    background-color: #2C221D;
+
+}
+
+.our_events_content {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.our_events_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_events_header h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.our_events_header img {
+    margin-left: 30px;
+}
+
+.our_events_header p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.our_events_tile {
+    display: grid;
+}
+
+.events {
+    display: grid;
+    grid-template-rows: 50% 1fr;
+    justify-content: center;
+}
+
+.events {
+    background-color: #342924;
+}
+
+.events img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.events_text {
+    padding: 40px;
+}
+
+.events_text span {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.events_text h3 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #F8B803;
+    margin: 20px 0;
+}
+
+.events_text p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.events_text a {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0C3B10;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+.events_text a:hover {
+    background-color: #2C8536;
+    transition: 0.5s;
+}
+
+@media(min-width: 770px) {
+    .events {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .events_even img {
+        order: 1;
+    }
+
+    .events img {
+        min-height: 100%;
+    }
+}
+
+.our_events_background_bottom {
+    background-image: url(../img/header_background_bottom.svg);
+    height: 50px;
+    background-size: cover;
+}
+
+.reviews {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.reviews_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.reviews_header h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.reviews_header img {
+    margin-left: 30px;
+}
+
+.reviews_header p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.responce_carousel .response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#david_bowman {
+    background-image: url(../img/reviews_david_bowman.jpg);
+}
+
+#erica_madisson {
+    background-image: url(../img/reviews_erica_madisson.jpg);
+}
+
+#tom_peterson {
+    background-image: url(../img/reviews_tom_peterson.png);
+}
+
+.responce_image {
+    height: 170px;
+    width: 170px;
+    border-radius: 170px;
+    background-position: center;
+    background-size: cover;
+}
+
+.responce_name {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #2C8536;
+    margin: 20px 0;
+}
+
+.response p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #59444099;
+    line-height: 1.5;
+    margin: 15px 0;
+    max-width: 450px;
+    ;
+}
+
+.responce_data {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #614E44;
+    margin: 20px 0;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #0C3B10;
+    font-size: 30px;
 }

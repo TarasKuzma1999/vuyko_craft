@@ -1,23 +1,36 @@
-const beersCard = document.querySelectorAll('.beers_card');
-const windowWidth = document.documentElement.clientWidth;
-let position = 0;
+$('.beer_carousel').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+});
 
-document.querySelector('.left_arrow').addEventListener('click', scrollLeft);
-document.querySelector('.right_arrow').addEventListener('click', scrollRight);
+// $('.choose_tour').slick({
+//     dots: true,
+//     infinite: false,
+//     speed: 5000,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     responsive: [{
+//             breakpoint: 1024,
+//             settings: {
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//                 infinite: true,
+//                 dots: true
+//             }
+//         },
+//         {
+//             breakpoint: 600,
+//             settings: {
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1
+//             }
+//         },
 
-function scrollRight() {
-    position -= windowWidth;
-    for (let i = 0; i < beersCard.length; i++) {
-        console.log(position);
-        beersCard[i].style.transform = `translate(${position}px, 0)`;
+//     ]
+// });
 
-    }
-}
-
-function scrollLeft() {
-    position += windowWidth;
-    for (let i = 0; i < beersCard.length; i++) {
-        console.log(position);
-        beersCard[i].style.transform = `translate(${position}px, 0)`;
-    }
-}
+$('.responce_carousel').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true
+});
