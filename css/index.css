@@ -642,3 +642,69 @@ header .logo {
     color: #0C3B10;
     font-size: 30px;
 }
+
+/* 'neverlock or r-sim батарея айклауд ' */
+.visit {
+    background-color: #342924;
+    margin: 30px auto;
+
+}
+
+.visit_banner {
+    background-image: url(../img/visit_background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.visit_banner span {
+    margin: 20px 0;
+}
+
+.visit_banner h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 58px;
+    color: #fff;
+}
+
+.visit_banner p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.visit_banner .visit_buttons {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.visit_banner .visit_buttons a {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0C3B10;
+    padding: 20px 40px;
+    border-radius: 30px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.visit_buttons a:hover {
+    background-color: #2C8536;
+    transition: 0.5s;
+}
+
+.visit_banner img {
+    max-width: 100px;
+}
