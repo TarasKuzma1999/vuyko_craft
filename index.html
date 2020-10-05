@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vuyko Craft</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
             integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
             crossorigin="anonymous" />
@@ -331,42 +333,75 @@
                     </div>
                 </div>
             </section>
-            <!--  <section class="questions">
+            <section class="questions">
                 <img src="img/questions_beers.png" alt="Beers">
-                <div>  
-                    <span>X X X</span>
+                <div class="questions_text">
+                    <span class="xxx_over_header">X X X</span>
                     <h2>Зустріньте наше пиво та зробіть свій вибір.</h2>
-                    <img src="img/about_us_wheat.svg" alt="wheat">
+                    <img src="img/about_us_wheat.svg" class="wheat" alt="wheat">
                     <p>Якщо у вас є якісь запитання чи пропозиції, ви завжди можете зв’язатися з нами безпосередньо.</p>
                     <div>
-                        <p>Чи можу я замовити ваше пиво через Інтернет?</p>
-                        <p>Ви можете зробити замовлення, надіславши нам електронного листа. Наш менеджер зв'яжеться з вами та пояснить усі деталі.</p>
+                        <p class="question_collapse" data-toggle="collapse" href="#question_collapse_first"
+                            role="button" aria-expanded="false" aria-controls="question_collapse_first"><span>Чи можу я
+                                замовити ваше пиво через
+                                Інтернет?</span><span>+</span></p>
+                        <p class="collapse" id="question_collapse_first">Ви можете зробити замовлення, надіславши нам
+                            електронного листа. Наш менеджер зв'яжеться з
+                            вами та пояснить усі деталі.</p>
                     </div>
+                    <hr>
                     <div>
-                        <p>Чи є у вас подарункові сертифікати?</p>
-                        <p>Так, звісно. Це буде чудовим подарунком для ваший друзів та родичів.</p>
+                        <p class="question_collapse" data-toggle="collapse" href="#question_collapse_second"
+                            role="button" aria-expanded="false" aria-controls="question_collapse_second"><span>Чи є у
+                                вас подарункові
+                                сертифікати?</span><span>+</span></p>
+                        <p class="collapse" id="question_collapse_second">Так, звісно. Це буде чудовим подарунком для
+                            ваший друзів та родичів.</p>
                     </div>
+                    <hr>
                     <div>
-                        <p>Чи потрібно заздалегідь записуватись на екскурсію чи дегустацію?</p>
-                        <p>Так, ми рекомендуємо замовляти екскурсії та дегустації принаймні за кілька тижнів наперед.</p>
+                        <p class="question_collapse" data-toggle="collapse" href="#question_collapse_third"
+                            role="button" aria-expanded="false" aria-controls="question_collapse_third"><span>Чи
+                                потрібно заздалегідь записуватись на
+                                екскурсію чи
+                                дегустацію?</span><span>+</span></p>
+                        <p class="collapse" id="question_collapse_third">Так, ми рекомендуємо замовляти екскурсії та
+                            дегустації принаймні за кілька тижнів наперед.
+                        </p>
                     </div>
+                    <hr>
                 </div>
             </section>
             <section class="our_brewery">
-                <span>X X X</span>
-                <h2>Наша пивоварня</h2>
-                <img src="img/about_us_wheat.svg" alt="wheat">
-                <p>Наша пивоварня - це поєднання старих традицій та сучасного обладнання. Ми варимо пиво з любов’ю та увагою до деталей.</p>
-                <div>
-                    <img src="img/our_brewery_slider1.png" alt="Our Brewery">
-                    <img src="img/our_brewery_slider2.png" alt="Our Brewery">
-                    <img src="img/our_brewery_slider3.png" alt="Our Brewery">
-                    <img src="img/our_brewery_slider4.png" alt="Our Brewery">
-                    <img src="img/our_brewery_slider5.png" alt="Our Brewery">
-                    <img src="img/our_brewery_slider6.png" alt="Our Brewery">
+                <div class="our_brewery_banner">
+                    <div class="our_brewery_header">
+                        <span class="xxx_over_header">X X X</span>
+                        <h2>Наша пивоварня</h2>
+                        <img src="img/about_us_wheat.svg" class="wheat" alt="wheat">
+                        <p>Наша пивоварня - це поєднання старих традицій та сучасного обладнання. Ми варимо пиво з
+                            любов’ю
+                            та
+                            увагою до деталей.</p>
+                    </div>
+                    <div>
+                        <div class="our_brewery_carousel">
+                            <img src="img/our_brewery_slider1.png" alt="Our Brewery">
+                            <img src="img/our_brewery_slider2.png" alt="Our Brewery">
+                            <img src="img/our_brewery_slider3.png" alt="Our Brewery">
+                            <img src="img/our_brewery_slider4.png" alt="Our Brewery">
+                            <img src="img/our_brewery_slider6.png" alt="Our Brewery">
+                        </div>
+                        <div class="our_brewery_carousel_nav">
+                            <img src="img/our_brewery_slider1.png" alt="Our Brewery">
+                            <img src="img/our_brewery_slider2.png" alt="Our Brewery">
+                            <img src="img/our_brewery_slider3.png" alt="Our Brewery">
+                            <img src="img/our_brewery_slider4.png" alt="Our Brewery">
+                            <img src="img/our_brewery_slider6.png" alt="Our Brewery">
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="contacts">
+            <!--   <section class="contacts">
                 <div>
                     <h2>Контакти</h2>
                     <p>Зв’яжіться з нами, щоб замовити тур, дегустацію або замовити наше пиво.</p>
@@ -410,7 +445,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
             integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
             crossorigin="anonymous"></script>
-
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
         <script src="js/index.js"></script>
     </body>
 

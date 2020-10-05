@@ -296,18 +296,20 @@ header .logo {
 }
 
 .choose_tour {
-    display: flex;
+    /* display: flex; */
     max-width: 1170px;
     min-height: 400px;
+
 }
 
-.tours {
+.about_tours .tours {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
     margin: 10px;
+    min-height: 350px;
 }
 
 .tours h3 {
@@ -322,6 +324,7 @@ header .logo {
     color: #fff;
     line-height: 1.5;
     margin: 20px 10px;
+    max-width: 250px;
 }
 
 .tours a {
@@ -476,7 +479,6 @@ header .logo {
 
 .events {
     display: grid;
-    grid-template-rows: 50% 1fr;
     justify-content: center;
 }
 
@@ -643,7 +645,7 @@ header .logo {
     font-size: 30px;
 }
 
-/* 'neverlock or r-sim батарея айклауд ' */
+
 .visit {
     background-color: #342924;
     margin: 30px auto;
@@ -707,4 +709,90 @@ header .logo {
 
 .visit_banner img {
     max-width: 100px;
+}
+
+.questions {
+    display: grid;
+    flex-direction: column;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.questions img {
+    max-width: 100%;
+    max-height: 600px;
+}
+
+.questions_text h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #261d17;
+    margin: 20px 0;
+}
+
+.questions_text p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #614E44;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.question_collapse {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question_collapse span {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.questions_text div .collapse {
+    font-size: 17px;
+}
+
+@media(min-width: 770px) {
+    .questions {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.our_brewery {
+    background-color: #342924;
+}
+
+.our_brewery_banner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px;
+}
+
+.our_brewery_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_brewery_header h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.our_brewery_header img {
+    margin-left: 30px;
+}
+
+.our_brewery_header p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 20px 0;
 }
