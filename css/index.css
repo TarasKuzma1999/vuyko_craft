@@ -761,8 +761,9 @@ header .logo {
     }
 }
 
-.our_brewery {
-    background-color: #342924;
+.our_brewery,
+.contacts {
+    background-color: #2C221D
 }
 
 .our_brewery_banner {
@@ -795,4 +796,177 @@ header .logo {
     color: #fff;
     line-height: 1.5;
     margin: 20px 0;
+}
+
+.contacts_info {
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.contacts_text {
+    padding-right: 10px;
+}
+
+.contacts_text h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.contacts_text p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.contacts_text div span {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 22px;
+    color: #AA7C5A;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.contacts_text div p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.contacts_text iframe {
+    width: 100%;
+    border: 0px;
+    margin: 20px 0;
+}
+
+.contacts_info form {
+    background-color: #342924;
+    padding: 20px;
+}
+
+.contacts_info form input {
+    display: block;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 20px 0;
+    background-color: #342924;
+    border: 1px solid#45352C;
+}
+
+.contacts_form_message {
+    height: 150px;
+}
+
+.contacts_info form .contacts_form_send {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    background-color: #0C3B10;
+}
+
+.contacts_info form .contacts_form_send:hover {
+    background-color: #2C8536;
+    transition: 0.5s;
+}
+
+@media(min-width: 770px) {
+    .contacts_info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contacts_info form {
+        max-height: 595px;
+    }
+}
+
+footer {
+    background-color: #261D17;
+}
+
+footer .footer_nav .logo {
+    height: 120px;
+    margin-top: 30px;
+}
+
+footer .footer_nav {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer .footer_nav nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer_nav nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+footer .footer_nav nav a:hover {
+    color: #F8B803;
+}
+
+footer .footer_copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer hr {
+    max-width: 1200px;
+    margin: 0 20px;
+}
+
+footer .footer_copyright p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 14px;
+    color: #D2C9BA;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+@media(min-width: 770px) {
+    footer .footer_nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    footer .footer_nav nav {
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    footer hr {
+        background-color: #514A45;
+        margin: 20px;
+    }
+
+    footer .footer_copyright {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
+
+@media(min-width: 1220px) {
+    footer hr {
+        margin: auto;
+    }
 }
