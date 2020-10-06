@@ -50,3 +50,9 @@ $('.our_brewery_carousel_nav').slick({
     centerMode: true,
     focusOnSelect: true
 });
+
+$(document).ready(function () {
+    $('.header_burger').click(function (event) {
+        $('.burger_nav').toggleClass('active');
+    })
+})
