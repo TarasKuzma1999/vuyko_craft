@@ -34,6 +34,10 @@ object {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: auto;
     background-color: #F4EEE1;
@@ -216,7 +220,7 @@ header .logo {
 }
 
 .wheat_img {
-    height: 30px;
+    height: 50px;
 }
 
 .about_us img {
