@@ -443,12 +443,7 @@ header .logo {
 }
 
 .beers {
-    background-color: #2C221D;
-    /* position: relative;
-    display: flex;
-    overflow: hidden; */
-
-
+    background-color: #2C221D;    
 }
 
 .beers .beer_carousel {
